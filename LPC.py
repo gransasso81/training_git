@@ -167,11 +167,11 @@ xhat = lpc_decode(A, G, w)
 massimo = np.max(np.abs(xhat))
 xhat32 = (xhat/massimo).astype(np.float32)
 
-scipy.io.wavfile.write("risultato.wav", sample_rate, xhat32)
+scipy.io.wavfile.write("risultato2.wav", sample_rate, xhat32)
 
 # Play speech
 #playsound("speech.wav")
-playsound("risultato.wav")
+playsound("risultato2.wav")
 
 print('done')
 
